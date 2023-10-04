@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image("logo_splash")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
         }
-        .padding()
     }
 }
 
