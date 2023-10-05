@@ -11,7 +11,7 @@ import SwiftUI
 struct didpoolfitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginContentView(store: .init(initialState: .init(showLogin: true), reducer: {LoginRegisterReducer()}))
         }
     }
 }
